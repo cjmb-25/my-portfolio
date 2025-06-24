@@ -47,6 +47,7 @@ p, a, li, button, ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  text-align: justify;
 }
 
 a:hover {
@@ -56,6 +57,14 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+}
+
+.text_container {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  color: #1f1d1d;
+  text-align: center;
 }
 
 button {
