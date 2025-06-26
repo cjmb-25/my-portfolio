@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Computer Engineer", "Network Engineer", "Cybersecurity Engineer" ];
-  const period = 3000;
+  const toRotate = [ "Computer Engineering Student", "Aspiring Network Engineer", "Aspiring Cybersecurity Engineer" ];
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -55,11 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Aspiring`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Computer Engineering Student", "Aspiring Network Engineer", "Aspiring Cybersecurity Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <div className="text_container">
-                    <p>Hi! I am Carlos Jose M. Barrios. A computer engineering student at Technological Institute of the Philippines - Manila. Aspiring network engineer or cybersecurity engineer. I work as a part-time I.T. administrator. I maintain the I.T. infrastracture of the company, from system administration, network administration, and cybersecurity compliance.</p>
-                    </div>
+                <h1><span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Computer Engineering Student", "Aspiring Network Engineer", "Aspiring Cybersecurity Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                  <div className="me_container">
+                    <p>Hi! I am Carlos Jose M. Barrios. A computer engineering student at Technological Institute of the Philippines - Manila. Aspiring network engineer or cybersecurity engineer. I work as a part-time I.T. administrator. I maintain the I.T. infrastracture of the company, from system administraion, network administration, and cybersecurity.</p>
+                  </div>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

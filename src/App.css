@@ -59,11 +59,15 @@ img {
   height: auto;
 }
 
-.text_container {
-  background-color: rgba(0, 0, 0, 0.9);
+.me_container {
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 15px;
   border-radius: 10px;
   color: #1f1d1d;
+  text-align: center;
+}
+
+.skill_text {
   text-align: center;
 }
 
@@ -307,6 +311,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  font-size: xxx-large;
+  color: #ffffff;
 }
 
 /************ Skills Css ************/
