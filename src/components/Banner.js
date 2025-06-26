@@ -55,8 +55,8 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1><span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Computer Engineering Student", "Aspiring Network Engineer", "Aspiring Cybersecurity Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <div className="me_container">
+                <div className="intro_container">
+                    <h1><span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Computer Engineering Student", "Aspiring Network Engineer", "Aspiring Cybersecurity Engineer" ]'><span className="wrap">{text}</span></span></h1>
                     <p>Hi! I am Carlos Jose M. Barrios. A computer engineering student at Technological Institute of the Philippines - Manila. Aspiring network engineer or cybersecurity engineer. I work as a part-time I.T. administrator. I maintain the I.T. infrastracture of the company, from system administraion, network administration, and cybersecurity.</p>
                   </div>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>

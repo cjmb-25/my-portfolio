@@ -59,7 +59,7 @@ img {
   height: auto;
 }
 
-.me_container {
+.intro_container {
   background-color: rgba(0, 0, 0, 0.65);
   padding: 15px;
   border-radius: 10px;
@@ -311,7 +311,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-  font-size: xxx-large;
+  font-size: 34pt;
   color: #ffffff;
 }
 
