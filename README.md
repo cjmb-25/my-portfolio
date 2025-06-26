@@ -1,9 +1,11 @@
 # CARLOS JOSE M. BARRIOS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App
 
 ## MY FUCKING PORTFOLIO
 
-In the project directory, you can run:
+Run:
 
+### `npm install`
 ### `npm start`
+### `localhost:3000 in web browser`
