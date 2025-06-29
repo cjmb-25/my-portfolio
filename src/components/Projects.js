@@ -1,47 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
-
   return (
     <section className="project" id="projects">
       <Container>
@@ -55,35 +17,46 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Microprocessor Systems Project</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Communication Systems Upgrade</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Information Security Compliance</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
+                      <p>Sumobot??? (Failure)</p>
+                      <div className="project_points_cont">
+                        <ul className="project_points">
+                          <li>Store a program an Arduino-Based Sumobot Using C++</li>
+                          <li>Create a Robot Chassis</li>
+                          <li>Connect the Circuitries of Different Components of Arduino-Based Sumobot</li>
+                        </ul>
+                      </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <p>CPS Recovery Solutions Inc. Communication Systems Upgrade</p>
+                      <div className="project_points_cont">
+                        <ul className="project_points">
+                          <li>Deployment of Additional Networking Devices</li>
+                          <li>Deployment of Private Automatic Branch Exchange</li>
+                          <li>Configuration of Communication System for Compliance</li>
+                        </ul>
+                      </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>CPS Recovery Solutions Inc. Information Security Compliance</p>
+                      <div className="project_points_cont">
+                        <ul className="project_points">
+                          <li>Revised Information Security Policies</li>
+                          <li>Deployment and Administration of EDR with DLP and SIEM</li>
+                          <li>Configuration of Endpoints for Compliance</li>
+                          <li>Infomation Security Awareness Training</li>
+                        </ul>
+                      </div>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

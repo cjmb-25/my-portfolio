@@ -321,7 +321,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #0c56a0;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -333,6 +333,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill p {
     color: #B8B8B8;
+    text-align: center;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -341,19 +342,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider {
   width: 80%;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
 }
 .skill-slider .item img {
-  width: 50%;
+  align-items: center;
+  width: 75%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 0%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
   z-index: -4;
 }
+
+/*banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
 
 /************ Projects Css ************/
 .project {
@@ -479,6 +490,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.project_points_cont {
+  display: flex;
+  justify-content: center;
+}
+
+.project_points li {
+  text-align: left;
 }
 
 /************ Projects Css ************/
